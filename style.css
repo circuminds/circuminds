@@ -1,3 +1,158 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #fdfdfd;
+  color: #333;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Logo / profile image */
+.profile-pic {
+  width: 120px;
+  border-radius: 15%;
+  margin-bottom: 20px;
+}
+
+/* Typography */
+h1 {
+  font-family: Tahoma;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin: 40px 0 20px;
+}
+
+/* Link Button */
+.link-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #FF6B0B;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+  margin-bottom: 30px;
+}
+
+.link-button:hover {
+  background: #333;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background: #FF6B0B;
+  padding: 2px 0;
+  font-size: 1rem;
+
+}
+.nav-button {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0 15px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.nav-button:hover {
+  background: #333;
+}
+
+/* Projects Gallery Styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+.project-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  padding: 15px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  color: inherit;
+  text-decoration: none;
+}
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.project-card h3 {
+  margin: 10px 0 6px;
+}
+.project-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+.project-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+}
+
+/* Contact Form Styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #FF6B0B;
+}
+
+.contact-form button {
+  align-self: flex-start;
+}
+
 /* Responsive Design */
 
 /* Small screens (phones) */
@@ -73,3 +228,4 @@
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   }
 }
+
